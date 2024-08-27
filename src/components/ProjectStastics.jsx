@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProjectStatics = () => {
+const ProjectStastics = () => {
   return (
     <div>ProjectStatics</div>
   )
 }
 
-export default ProjectStatics
+export default ProjectStastics
