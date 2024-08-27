@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Platform = () => {
+const Platforms = () => {
   return (
     <div>Platform</div>
   )
 }
 
-export default Platform
+export default Platforms
