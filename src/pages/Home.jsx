@@ -82,15 +82,17 @@ const members = [
 const Home = () => {
   return (
     <div className="p-5">
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+      {/* Stastics and platforms */}
+      <div className="border-2 border-red-500 grid md:grid-cols-2 xl:grid-cols-4 gap-4">
         <ProjectStastics />
         <Platforms />
         <ProjectStastics />
         <Platforms />
       </div>
 
-      <div>
-        <div className="flex justify-between items-center py-4">
+      {/* Current Projects */}
+      <div className="border-2 border-green-500">
+        <div className=" flex justify-between items-center py-4">
           <h1 className="text-lg font-semibold">Current Projects</h1>
           <p className="text-sm underline text-indigo-600">See all</p>
         </div>
@@ -103,7 +105,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      {/* Current Clients */}
+      <div className="border-2 border-blue-500">
         <div className="flex justify-between items-center py-4">
           <h1 className="text-lg font-semibold">Current Clients</h1>
           <p className="text-sm underline text-indigo-600">See all</p>
@@ -117,14 +120,18 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      {/* Members */}
+      <div className="border-2 border-yellow-500">
         <div className="flex justify-between items-center py-4">
           <h1 className="text-lg font-semibold">Members</h1>
           <p className="text-sm underline text-indigo-600">See all</p>
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
-          {members && members.map((member) => <MemberCard member={member} key={member.job} />)}
+          {members &&
+            members.map((member) => (
+              <MemberCard member={member} key={member.job} />
+            ))}
         </div>
       </div>
     </div>

@@ -93,7 +93,7 @@ const ProjectStastics = () => {
       chart.render();
 
       return () => {
-        chart.destroy(); // Destroy the chart instance when the component unmounts
+        chart.destroy();
       };
     }
   }, [options]);

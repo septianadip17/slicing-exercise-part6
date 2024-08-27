@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 const MemberCard = ({ member }) => {
   return (
     <div className="p-6 bg-white rounded-xl space-y-4">
-      <div className="flex justify-between items-cener">
+      <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold text-gray-700">
           {member.total_members}
         </h1>

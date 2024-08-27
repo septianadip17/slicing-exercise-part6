@@ -5,7 +5,7 @@ import { DiAndroid } from "react-icons/di";
 
 const Platforms = () => {
   return (
-    <div className="p-5 bg-white rounded-xl">
+    <div className="p-5 bg-white rounded-xl border-2 border-purple-600">
       <h1 className="text-2xl font-bold text-gray-700">Platform</h1>
       <div className="p-2 grid grid-cols-2 gap-8">
         <div className="space-y-3 text-gray-500">
